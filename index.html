@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lizz's RPG Adventure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+        <header class="header">
+            <h1>Lizz's Little RPG Adventure</h1>
+            <p>This is an inventory... a very RPG inventory</p>
+        </header>
+
+        <section class="player-info">
+
+            <div>
+                <h2>Lizz</h2>
+                <p>Level 04 · Wanderer</p>
+            </div>
+
+            <div class="backpack-count">
+                <p>BACKPACK</p>
+                <h3 id="item-count">12 items</h3>
+            </div>
+
+        </section>
+
+        <div class="inventory-layout">
+            <section class="inventory-section">
+
+                <h2>Inventory</h2>
+
+                <div class="inventory-grid" id="inventory">
+
+                    <div class="item" data-name="Strawberry" data-category="food"
+                        data-description="A sweet strawberry picked from the garden, no tax included.">
+                        <img src="assets/64px/Crops/item_strawberry.png" alt="Strawberry">
+                    </div>
+
+                    <div class="item" data-name="Pumpkin" data-category="food" data-description="PUMKIN.">
+                        <img src="assets/64px/Crops/item_pumpkin.png" alt="Pumpkin">
+                    </div>
+
+                    <div class="item" data-name="Pancakes" data-category="food" data-description="Not IHOP Pancakes.">
+                        <img src="assets/64px/Dishes/item_pancakes.png" alt="Pancakes">
+                    </div>
+
+                    <div class="item" data-name="Hot Chocolate" data-category="drinks"
+                        data-description="Time to find marshmallows.">
+                        <img src="assets/64px/Drinks/item_hot_chocolate.png" alt="Hot Chocolate">
+                    </div>
+
+                    <div class="item" data-name="Salmon" data-category="food" data-description="Fih.">
+                        <img src="assets/64px/Fishing/item_salmon.png" alt="Salmon">
+                    </div>
+
+                    <div class="item" data-name="Gold Bar" data-category="materials" data-description="Money.">
+                        <img src="assets/64px/Materials/item_gold_bar.png" alt="Gold Bar">
+                    </div>
+
+                    <div class="item" data-name="Ruby" data-category="materials"
+                        data-description="Could be sell for money.">
+                        <img src="assets/64px/Materials/item_ruby.png" alt="Ruby">
+                    </div>
+
+                    <div class="item" data-name="Wheat" data-category="materials"
+                        data-description="Freshly harvested wheat.">
+                        <img src="assets/64px/Crops/item_wheat.png" alt="Wheat">
+                    </div>
+
+                    <div class="item" data-name="Butterfly" data-category="nature"
+                        data-description="A colorful butterfly">
+                        <img src="assets/64px/Critters/item_butterfly.png" alt="Butterfly">
+                    </div>
+
+                    <div class="item" data-name="Monstera" data-category="furniture"
+                        data-description="A definitely not stolen little plant to decorate your home.">
+                        <img src="assets/64px/Furniture/item_potted_monstera.png" alt="Monstera">
+                    </div>
+
+                    <div class="item" data-name="Ramen" data-category="food" data-description="Buldak ramen.">
+                        <img src="assets/64px/Dishes/item_ramen.png" alt="Ramen">
+                    </div>
+
+                    <div class="item" data-name="Ladybug" data-category="nature" data-description="Luck is with you.">
+                        <img src="assets/64px/Critters/item_ladybug.png" alt="Ladybug">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="storage-section">
+
+                <h2>Storage Chest</h2>
+
+                <div class="inventory-grid" id="storage">
+
+                    <div class="empty-slot"></div>
+                    <div class="empty-slot"></div>
+                    <div class="empty-slot"></div>
+                    <div class="empty-slot"></div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="item-details">
+
+            <h2 id="selected-name">Your collection</h2>
+
+            <p id="selected-description">
+                Item info
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
